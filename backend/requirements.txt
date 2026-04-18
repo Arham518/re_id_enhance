@@ -1,0 +1,8 @@
+requests
+flask
+flask-cors
+werkzeug
+scikit-learn
+Pillow
+numpy
+joblib
