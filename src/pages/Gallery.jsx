@@ -9,9 +9,9 @@ export default function Gallery() {
 
   // Updated images specifically focused on biometric/fingerprint scanning failures and corrupted data
   const images = [
-    { id: 1, src: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&q=80", title: "Corrupted Ridge Mapping", category: "Data Artifacts" },
-    { id: 2, src: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80", title: "Database Sync Failure", category: "System Errors" },
-    { id: 3, src: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80", title: "Partial Matching Loss", category: "Neural Processing" },
+    { id: 1, src: "https://en.dailypakistan.com.pk/wp-content/uploads/2024/12/sindh-govt-extends-biometric-deadline-for-old-vehicles-by-two-months-news-262402-850x478.jpg", category: "Data Artifacts" },
+    { id: 2, src: "https://www.geo.tv/assets/uploads/updates/2021-01-17/330350_3512821_updates.jpg", title: "Database Sync Failure", category: "System Errors" },
+    { id: 3, src: "https://plus.unsplash.com/premium_photo-1758523722005-c125eab5d0f5?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", title: "Partial Matching Loss", category: "Neural Processing" },
     { id: 4, src: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80", title: "Worn Sensor Artifacts", category: "Hardware Issue" },
     { id: 5, src: "https://images.unsplash.com/photo-1633265486064-086b219458ce?auto=format&fit=crop&q=80", title: "Degraded Fingerprint Latent", category: "Biometric Insight" },
     { id: 6, src: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80", title: "Spoofing Trace Analysis", category: "System Integrity" },
@@ -133,10 +133,6 @@ export default function Gallery() {
                     </div>
                     
                     <div className="space-y-4">
-                      <div className="flex items-center gap-3 p-4 bg-secondary/20 rounded-xl border border-secondary/30">
-                        <Info className="w-5 h-5 text-secondary" />
-                        <span className="text-sm font-bold text-muted-foreground break-all">Asset ID: #BS-{selectedImage.id}00293</span>
-                      </div>
                       <p className="text-muted-foreground font-medium leading-relaxed text-sm">
                         High-resolution capture from the NeuralScan core research facility focusing on biometric identification degradation mapping. Demonstrates the precision of Biometric Insight interpretation in edge cases.
                       </p>

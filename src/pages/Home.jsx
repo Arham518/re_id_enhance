@@ -82,10 +82,8 @@ export default function Home() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.2, delay: 0.2 }}
-            className="h-[500px] lg:h-[650px] relative hidden lg:flex flex-col items-center justify-center p-8 bg-white/40 backdrop-blur-md rounded-[3rem] border border-white/50 shadow-xl"
+            className="h-[500px] lg:h-[650px] relative hidden lg:flex flex-col items-center justify-center p-8 bg-transparent"
           >
-            <div className="absolute inset-0 bg-secondary/5 blur-[120px] rounded-full" />
-            <img src="/website logo.jpeg" alt="Professional Biometrics" className="w-[80%] max-w-md h-auto rounded-xl shadow-sm mix-blend-multiply mb-8 relative z-10" />
             <div className="relative z-10 w-full flex-grow">
                <ThreeDScanner />
             </div>

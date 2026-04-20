@@ -9,11 +9,11 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-16 mb-20">
         {/* Brand */}
         <div className="md:col-span-1 space-y-8">
-          <Link to="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-primary dark:bg-primary-foreground rounded-xl flex items-center justify-center">
-              <Fingerprint className="text-primary-foreground dark:text-primary w-6 h-6" />
+          <Link to="/" className="flex flex-col gap-3">
+            <div className="relative w-32 h-12 flex items-center justify-start transition-all duration-500 hover:scale-105">
+              <img src="/finger_logo.jpg" alt="Logo" className="w-full h-full object-contain mix-blend-multiply" />
             </div>
-            <span className="text-2xl font-black tracking-tighter">NEURAL<span className="text-brand-500">SCAN</span></span>
+            <span className="text-sm font-black tracking-tighter leading-tight text-foreground opacity-90">RE Touch ID – Aged & Labour Fingerprint Enhancement Software</span>
           </Link>
           <p className="text-muted-foreground font-medium leading-relaxed">
             Pioneering the next generation of biometric forensic reconstruction through proprietary AI deep-learning models and hybrid neural architectures.
@@ -29,9 +29,9 @@ export default function Footer() {
 
         {/* Quick Links */}
         <div>
-          <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-brand-500 mb-8">Intelligence</h4>
+          <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-secondary mb-8">Intelligence</h4>
           <ul className="space-y-4">
-            {['Home', 'About', 'Gallery', 'Contact'].map((item) => (
+            {['Home', 'About', 'Scanner', 'Gallery'].map((item) => (
               <li key={item}>
                 <Link to={item === 'Home' ? '/' : `/${item.toLowerCase()}`} className="text-muted-foreground font-bold hover:text-foreground transition-colors flex items-center justify-between group">
                   {item}
@@ -51,21 +51,21 @@ export default function Footer() {
               <span className="font-bold text-sm tracking-tight text-foreground">mr.arham710@gmail.com</span>
             </li>
             <li className="flex flex-col gap-1">
-              <span className="text-[10px] font-black uppercase text-muted-foreground/50">Forensic Lab</span>
-              <span className="font-bold text-sm tracking-tight text-foreground">Mithi, Sindh, Pakistan</span>
+              <span className="text-[10px] font-black uppercase text-muted-foreground/50">Location</span>
+              <span className="font-bold text-sm tracking-tight text-foreground">Karachi, Sindh, Pakistan</span>
             </li>
           </ul>
         </div>
 
         {/* Newsletter */}
         <div className="md:col-span-1">
-          <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-brand-500 mb-8">Briefing</h4>
-          <p className="text-sm font-medium text-muted-foreground mb-6 leading-relaxed">Join 5,000+ researchers receiving our quarterly biometric research updates.</p>
+          <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-secondary mb-8">Briefing</h4>
+          <p className="text-sm font-medium text-muted-foreground mb-6 leading-relaxed">For Update</p>
           <form className="space-y-3">
             <input
               type="email"
               placeholder="Official Email"
-              className="w-full bg-secondary/50 border border-border/50 rounded-xl px-5 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 transition-all font-medium"
+              className="w-full bg-secondary/10 border border-border/50 rounded-xl px-5 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-secondary/50 transition-all font-medium"
             />
             <button className="w-full bg-primary text-primary-foreground py-3 rounded-xl text-sm font-black hover:opacity-90 transition-all premium-shadow">
               Subscribe
@@ -81,7 +81,7 @@ export default function Footer() {
           <a href="#" className="hover:text-foreground transition-colors">API Docs</a>
         </div>
         <p className="text-[10px] font-bold text-muted-foreground/40 tracking-widest uppercase">
-          © {currentYear} NEURALSCAN AI. BIOMETRIC INTEL SYSTEMS.
+          © {currentYear} RE Touch ID. BIOMETRIC INTEL SYSTEMS.
         </p>
       </div>
     </footer>
