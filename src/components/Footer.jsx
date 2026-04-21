@@ -11,12 +11,12 @@ export default function Footer() {
         <div className="md:col-span-1 space-y-8">
           <Link to="/" className="flex flex-col gap-3">
             <div className="relative w-32 h-12 flex items-center justify-start transition-all duration-500 hover:scale-105">
-              <img src="/finger_logo.jpg" alt="Logo" className="w-full h-full object-contain mix-blend-multiply" />
+              <img src="/finger_logo.png" alt="Logo" className="w-full h-full object-contain mix-blend-multiply" />
             </div>
             <span className="text-sm font-black tracking-tighter leading-tight text-foreground opacity-90">RE Touch ID – Aged & Labour Fingerprint Enhancement Software</span>
           </Link>
           <p className="text-muted-foreground font-medium leading-relaxed">
-            Pioneering the next generation of biometric forensic reconstruction through proprietary AI deep-learning models and hybrid neural architectures.
+             Advancing biometric identification by automatically enhancing aged, cut, and labour-damaged fingerprints. A software-based approach ensuring inclusive and reliable identity verification for all.
           </p>
           <div className="flex gap-3">
             {[Twitter, Linkedin, Github].map((Icon, i) => (
@@ -31,7 +31,7 @@ export default function Footer() {
         <div>
           <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-secondary mb-8">Intelligence</h4>
           <ul className="space-y-4">
-            {['Home', 'About', 'Scanner', 'Gallery'].map((item) => (
+            {['Home', 'About', 'Scanner', 'Team & Research'].map((item) => (
               <li key={item}>
                 <Link to={item === 'Home' ? '/' : `/${item.toLowerCase()}`} className="text-muted-foreground font-bold hover:text-foreground transition-colors flex items-center justify-between group">
                   {item}
@@ -52,7 +52,7 @@ export default function Footer() {
             </li>
             <li className="flex flex-col gap-1">
               <span className="text-[10px] font-black uppercase text-muted-foreground/50">Location</span>
-              <span className="font-bold text-sm tracking-tight text-foreground">Karachi, Sindh, Pakistan</span>
+              <span className="font-bold text-sm tracking-tight text-foreground">NED University of Engineering & Technology (TIEST), Karachi, Pakistan</span>
             </li>
           </ul>
         </div>
@@ -74,12 +74,10 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto pt-10 border-t flex flex-col md:row justify-between items-center gap-6">
-        <div className="flex gap-8 text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground/60">
-          <a href="#" className="hover:text-foreground transition-colors">Privacy Shield</a>
-          <a href="#" className="hover:text-foreground transition-colors">Forensic Standards</a>
-          <a href="#" className="hover:text-foreground transition-colors">API Docs</a>
-        </div>
+      <div className="max-w-7xl mx-auto pt-4 border-t flex flex-col md:row justify-between items-center gap-4">
+        {/* <div className="flex gap-8 text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground/60">
+
+        </div> */}
         <p className="text-[10px] font-bold text-muted-foreground/40 tracking-widest uppercase">
           © {currentYear} RE Touch ID. BIOMETRIC INTEL SYSTEMS.
         </p>

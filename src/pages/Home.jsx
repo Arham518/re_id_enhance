@@ -98,7 +98,7 @@ export default function Home() {
              <h2 className="text-sm font-black tracking-[0.3em] text-secondary uppercase mb-4">The Real-World Challenge</h2>
              <h3 className="text-4xl md:text-5xl font-extrabold tracking-tighter">Why standard verification fails.</h3>
              <p className="mt-4 text-muted-foreground text-lg max-w-2xl mx-auto">
-               Traditional rigid matching systems struggle with the realities of human biology, aging, and environmental wear.
+              Traditional biometric systems struggle with the realities of aging and labour, often rejecting faded, cut, or worn fingerprints
              </p>
           </div>
 
@@ -110,18 +110,18 @@ export default function Home() {
                 <div className="w-14 h-14 bg-red-100 dark:bg-red-900/20 rounded-2xl flex items-center justify-center mb-6">
                    <BadgeInfo className="w-7 h-7 text-red-600" />
                 </div>
-                <h4 className="text-2xl font-bold mb-4">User-Related Problems</h4>
+                <h4 className="text-2xl font-bold mb-4">The Real-World Challenge</h4>
                 <ul className="space-y-3 text-muted-foreground font-medium">
                    <li className="flex items-start gap-2">
-                     <div className="w-1.5 h-1.5 rounded-full bg-red-500 mt-2"></div>
+                     <div className="w-1.5 h-1.5 rounded-full  mt-2"></div>
                      <span>Cuts, burns, or worn fingerprints common in labor-intensive work. Example: A worker with rough hands is unable to unlock a system.</span>
                    </li>
                    <li className="flex items-start gap-2">
-                     <div className="w-1.5 h-1.5 rounded-full bg-red-500 mt-2"></div>
+                     <div className="w-1.5 h-1.5 rounded-full  mt-2"></div>
                      <span>Aging effects on facial or fingerprint patterns naturally over time.</span>
                    </li>
                    <li className="flex items-start gap-2">
-                     <div className="w-1.5 h-1.5 rounded-full bg-red-500 mt-2"></div>
+                     <div className="w-1.5 h-1.5 rounded-full  mt-2"></div>
                      <span>Incorrect finger placement or misalignment leading to chronic rejection.</span>
                    </li>
                 </ul>
@@ -137,15 +137,15 @@ export default function Home() {
                 <h4 className="text-2xl font-bold mb-4">System-Related Problems</h4>
                 <ul className="space-y-3 text-muted-foreground font-medium">
                    <li className="flex items-start gap-2">
-                     <div className="w-1.5 h-1.5 rounded-full bg-orange-500 mt-2"></div>
+                     <div className="w-1.5 h-1.5 rounded-full  mt-2"></div>
                      <span>Corrupted biometric data records causing false negatives.</span>
                    </li>
                    <li className="flex items-start gap-2">
-                     <div className="w-1.5 h-1.5 rounded-full bg-orange-500 mt-2"></div>
+                     <div className="w-1.5 h-1.5 rounded-full mt-2"></div>
                      <span>Poor template matching algorithms degrading reliability.</span>
                    </li>
                    <li className="flex items-start gap-2">
-                     <div className="w-1.5 h-1.5 rounded-full bg-orange-500 mt-2"></div>
+                     <div className="w-1.5 h-1.5 rounded-full mt-2"></div>
                      <span>Large databases causing extremely slow search and matching performance.</span>
                    </li>
                 </ul>
@@ -155,10 +155,10 @@ export default function Home() {
                initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }}
                className="bg-card p-10 rounded-3xl border premium-shadow relative overflow-hidden"
              >
-                <div className="w-14 h-14 bg-secondary/20 rounded-2xl flex items-center justify-center mb-6">
-                   <ShieldAlert className="w-7 h-7 text-secondary" />
+                <div className="w-14 h-14 bg-orange-100 dark:bg-orange-900/20 rounded-2xl flex items-center justify-center mb-6">
+                   <ShieldAlert className="w-7 h-7 text-secondary text-orange-600" />
                 </div>
-                <h4 className="text-2xl font-bold mb-4">Integrity Risks</h4>
+                <h4 className="text-2xl font-bold mb-4 ">Integrity Risks</h4>
                 <ul className="space-y-3 text-muted-foreground font-medium">
                    <li className="flex items-start gap-2">
                      <div className="w-1.5 h-1.5 rounded-full bg-secondary mt-2"></div>

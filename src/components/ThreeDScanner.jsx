@@ -60,13 +60,13 @@ export default function ThreeDScanner() {
         <TechObject />
         
         <Environment preset="night" />
-        <ContactShadows
+        {/* <ContactShadows
           position={[0, -2, 0]}
           opacity={0.3}
           scale={10}
           blur={2}
           far={4}
-        />
+        /> */}
       </Canvas>
     </div>
   );

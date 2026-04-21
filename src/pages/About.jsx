@@ -46,10 +46,9 @@ export default function About() {
             <BookOpen className="w-4 h-4" /> Our Mission
           </div>
           <h1 className="text-5xl md:text-7xl font-black mb-8 tracking-tighter leading-none">
-            The future of <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary">biometric</span> forensic science.
-          </h1>
+            Ensuring no identity is rejected</h1>
           <p className="text-xl text-muted-foreground font-medium leading-relaxed italic border-l-4 border-secondary pl-8 ml-2">
-            "We are not just identifying people; we are reconstructing histories through the lines on their hands."
+             "Our goal is to overcome the limitations of current scanners by digitally restoring worn, cut, and aged fingerprints, granting seamless access to essential services"
           </p>
         </motion.div>
 

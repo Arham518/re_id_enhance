@@ -19,7 +19,7 @@ export default function Navbar() {
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
     { name: 'Scanner', path: '/scanner' },
-    { name: 'Gallery', path: '/gallery' },
+    { name: 'Team & Research', path: '/gallery' },
   ];
 
   return (
@@ -39,7 +39,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
             <div className="relative w-32 h-12 flex items-center justify-center transition-all duration-500 hover:scale-105">
-              <img src="/finger_logo.jpg" alt="Logo" className="w-full h-full object-contain mix-blend-multiply" />
+              <img src="/finger_logo.png" alt="Logo" className="w-full h-full object-contain mix-blend-multiply" />
             </div>
           </Link>
 
